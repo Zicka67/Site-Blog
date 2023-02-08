@@ -1,0 +1,105 @@
+@media only screen and (min-width: 1900px) {
+    header {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+      }
+      
+      nav {
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 20px;
+      }
+    
+      .left-side, .right-side {
+        display: flex;
+        align-items: center;
+      }
+
+      .right-side { 
+        margin-top: 1vw;
+        padding-right: 5vw;
+      }
+
+    
+      .paddingRight {
+        margin-right: 5rem;
+      }
+
+      .left-side {
+         margin-top: 1.2vw;
+         padding-left: 5vw;
+      }
+    
+      .right-side a {
+        text-transform: uppercase;
+      }
+      
+      .icon {
+        color: white;
+        font-size: 2em;
+      }
+      
+      nav a {
+        margin-left: 5vh;
+        color: rgb(255, 255, 255);
+        margin-top: 10px;
+        font-size: 1.5em;
+      }
+      
+      #background-video {
+        width: 100%;
+        height: auto;
+      }
+    
+      .textOnVideo {
+        position: absolute;
+        bottom: 45%;
+        color: white;
+        text-align: center;
+        width: 75vh;
+      }
+    
+      .textOnVideo h1{
+        font-size: 3.5em;
+        margin-bottom: 2vh;
+        text-transform: uppercase;
+      }
+    
+      .textOnVideo h3{
+       font-size: 1.75em;
+       font-weight: 200;
+       margin-bottom: 2vh;
+      }
+    
+      .textOnVideo input{
+        padding: 1em;
+        background-color: rgb(8, 168, 136);
+        border-radius: 5px;
+        color: white;
+        font-size: 1em;
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
