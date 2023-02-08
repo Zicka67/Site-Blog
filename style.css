@@ -35,7 +35,7 @@ a, h1, h2, h3, h4, p {
   font-family: 'Rubik', sans-serif;
 }
 
-/* *************************************************** */
+/* *********************** HEADER **************************** */
 
 header {
     position: relative;
@@ -44,7 +44,6 @@ header {
     align-items: center;
     width: 100%;
   }
-
   
   nav {
     position: absolute;
@@ -60,8 +59,13 @@ header {
     align-items: center;
   }
 
+  .left-side {
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+  }
+
   .paddingRight {
-    padding-right: 10px;
+    margin-right: 1rem;
   }
 
   .right-side a {
@@ -69,13 +73,11 @@ header {
   }
   
   .icon {
-    margin-top: 10px;
-    padding-left: 10px;
     color: white;
   }
   
   nav a {
-    margin-left: 15px;
+    margin-left: 0.5rem;
     text-decoration: none;
     color: rgb(255, 255, 255);
     margin-top: 10px;
@@ -89,7 +91,7 @@ header {
 
   .textOnVideo {
     position: absolute;
-    bottom: 30%;
+    bottom: 25%;
     color: white;
     text-align: center;
     width: 50vh;
@@ -97,18 +99,47 @@ header {
 
   .textOnVideo h1{
     font-size: 1.5em;
+    margin-bottom: 2vh;
+    text-transform: uppercase;
   }
 
   .textOnVideo h3{
    font-size: 0.75em;
    font-weight: 200;
+   margin-bottom: 2vh;
   }
 
   .textOnVideo input{
     padding: 0.5em;
-    background-color: transparent;
+    background-color: rgb(8, 168, 136);
+    border-radius: 5px;
     color: white;
   }
 
+  /* ********************************************** SECTION2 ****************************************************** */
 
- 
+ .section2 {
+  display: flex;
+  justify-content: center;
+  gap: 3vw;
+ }
+
+ .section2left {
+  width: 45%;
+  background-color: rgb(241, 124, 8);
+ }
+
+ .section2right {
+  width: 45%;
+  background-color: aqua;
+ }
+
+ .section2right h1{
+  font-size: 1.2rem;
+
+ }
+
+ .section2right p{
+  font-size: 0.5rem;
+  text-align: justify;
+ }
