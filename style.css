@@ -31,38 +31,84 @@ table {
   border-spacing: 0;
 }
 
+a, h1, h2, h3, h4, p {
+  font-family: 'Rubik', sans-serif;
+}
+
 /* *************************************************** */
 
 header {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
   }
+
   
   nav {
+    position: absolute;
     display: flex;
     justify-content: space-between;
     width: 100%;
     margin-bottom: 20px;
   }
+
   
   .left-side, .right-side {
     display: flex;
     align-items: center;
   }
-  
-  .icon {
-    margin-right: 20px;
+
+  .paddingRight {
+    padding-right: 10px;
+  }
+
+  .right-side a {
+    text-transform: uppercase;
   }
   
-  a {
-    margin-left: 20px;
+  .icon {
+    margin-top: 10px;
+    padding-left: 10px;
+    color: white;
+  }
+  
+  nav a {
+    margin-left: 15px;
     text-decoration: none;
-    color: black;
+    color: rgb(255, 255, 255);
+    margin-top: 10px;
+    font-size: 10px;
   }
   
   #background-video {
     width: 100%;
     height: auto;
   }
+
+  .textOnVideo {
+    position: absolute;
+    bottom: 30%;
+    color: white;
+    text-align: center;
+    width: 50vh;
+  }
+
+  .textOnVideo h1{
+    font-size: 1.5em;
+  }
+
+  .textOnVideo h3{
+   font-size: 0.75em;
+   font-weight: 200;
+  }
+
+  .textOnVideo input{
+    padding: 0.5em;
+    background-color: transparent;
+    color: white;
+  }
+
+
+ 
