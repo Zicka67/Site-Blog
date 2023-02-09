@@ -186,8 +186,7 @@ fap-play {
 /* ******************************* BLOG ********************************** */
 
 .blog {
-  margin-bottom: 50vh;
-  width: 100vw;
+  height: 100vh;
 }
 
 .h1blog {
@@ -210,6 +209,7 @@ fap-play {
 
 .categorie a {
   border-radius: 5px;
+  text-decoration: none;
 }
 
 .categorie input {
@@ -219,6 +219,10 @@ fap-play {
   margin-top: 0.5vh;
   text-transform: uppercase;
   font-size: 0.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
 }
 
 .categorie a:nth-child(1) {
@@ -259,6 +263,10 @@ fap-play {
   grid-template-columns: 1fr;
   width: 90%;
   margin: 2vh auto;
+}
+
+.last {
+  margin-bottom: 10vh;
 }
 
 
