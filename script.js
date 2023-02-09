@@ -5,8 +5,8 @@
 
   // ********************************************
 
-const burger = document.getElementById('burger');
-const navLinks = document.querySelector('.nav-links');
+    const burger = document.getElementById('burger');
+    const navLinks = document.querySelector('.left-side');
 
     burger.addEventListener('click', () => {
     navLinks.classList.toggle('active');
