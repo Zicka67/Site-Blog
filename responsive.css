@@ -111,9 +111,7 @@
 
  .section2right {
   width: 45%;
-  /* background-color: aqua; */
   color: rgb(0, 0, 0);
-  margin-top: -20vh;
  }
 
  .section2right h1{
@@ -132,9 +130,6 @@
   /* position: relative; */
  }
 
- /* .section2left i {
-
- } */
 
  .play-button {
   color: rgb(255, 255, 255);
@@ -147,14 +142,73 @@
   font-size: 50px;
 }
 
+.categorie {
+  display: flex;
+  flex-direction: row;
+  padding: 0 0;
+}
+
 /* ******************************* BLOG ********************************** */
 
 .blog {
-  margin-bottom: 50vh;
-  width: 100%;
-  font-size: 1.5rem;
+  margin: 0 auto;
+  width: 93%;
 }
 
+.blog h1 {
+  font-size: 2rem;
+}
+
+.h1blog h1 {
+  margin-bottom: 10vh;
+}
+
+.categorie a {
+  text-align: center;
+  padding: 5px;
+}
+
+.categorie input {
+  padding-left: 0;
+}
+
+.categorie a:nth-child(1) {
+  width: 5%;
+  background-color: black;
+  height: 1.35rem;
+  display: flex;
+  justify-content: center;
+  margin-right: 1vw;
+}
+.categorie a:nth-child(2) {
+  width: 10%;
+  background-color: rgb(191, 20, 74);
+  height: 1.35rem;
+  display: flex;
+  justify-content: center;
+  margin-right: 1vw;
+}
+.categorie a:nth-child(3) {
+  width: 7%;
+  background-color: rgb(8, 94, 180);
+  display: flex;
+  justify-content: center;
+  margin-right: 1vw;
+}
+.categorie a:nth-child(4) {
+  width: 7%;
+  background-color: rgb(23, 151, 23);
+  display: flex;
+  justify-content: center;
+  margin-right: 1vw;
+}
+.categorie a:nth-child(5) {
+  width: 10%;
+  background-color: rgb(58, 58, 58);
+  display: flex;
+  justify-content: center;
+  
+}
 
 .blogContainer {
   display: grid;
@@ -168,12 +222,10 @@
   background-color: rgba(255, 255, 255, 0.8);
   text-align: center;
   margin: 0 auto;
-  height: auto;
 }
 
 .grid-item img {
   width: 100%;
-  height: 85%;
   border-radius: 5px;
 }
 
@@ -182,9 +234,9 @@
   flex-direction: column;
   justify-content: center;
   position: absolute;
-  top: 75%;
-  left: 20%;
-  transform: translate(-25%, -80%);
+  top: 90%;
+  left: 15%;
+  transform: translate(-10%, -75%);
   color: white;
   text-align: left;
 }
