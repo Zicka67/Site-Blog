@@ -185,9 +185,9 @@ fap-play {
 
 /* ******************************* BLOG ********************************** */
 
-.blog {
+/* .blog {
   height: 100vh;
-}
+} */
 
 .h1blog {
   display: flex;
@@ -276,6 +276,13 @@ fap-play {
   margin: 0 auto;
   width: 100%;
   position: relative;
+  filter: grayscale(100%);
+  transition: 0.8s;
+}
+
+.grid-item:hover {
+  filter: grayscale(0%);
+  transition: 0.8s;
 }
 
 .grid-item img {
@@ -304,4 +311,11 @@ fap-play {
   transform: translate(-10%, -90%);
   color: white;
   text-align: left;
+}
+
+/* ************************* FOOTER ************************ */
+
+footer {
+  height: 10vh;
+  background-color: bisque;
 }
