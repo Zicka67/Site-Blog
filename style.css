@@ -75,6 +75,10 @@ header {
   .right-side a {
     text-transform: uppercase;
   }
+
+  .right-side a:hover {
+    cursor: pointer;
+  }
   
   .icon {
     color: white;
@@ -316,26 +320,23 @@ fap-play {
 /* ************************* FOOTER ************************ */
 
 .footer {
-  height: 10vh;
+  width: 100%;
+  margin: 30vh auto 30vh auto;
+  height: 6vh;
   background-color: rgb(57, 56, 55);
 }
 
-.footer button {
-  padding: 0.75em;
-  border-radius: 100%;
-  /* background-color: rgb(57, 56, 55); */
-  background-color: transparent;
-  border: black 1px solid;
-  position: fixed;
-  right: 5vw;
-  bottom: 5vh;
-  margin-right: 2vw;
-  -webkit-box-shadow: 0px 0px 15px 0px #000000; 
-box-shadow: 0px 0px 15px 0px #000000;
+.footer p {
+  font-size: 0.75rem;
+  display: flex;
+  justify-content: center;
+  padding-top: 3%;
+  color: white;
 }
 
-.footer button:hover {
-  cursor: pointer;
-  z-index: 10;
-} 
+.footer i {
+  display: none;
+}
+
+
 
