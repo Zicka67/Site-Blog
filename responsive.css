@@ -62,7 +62,7 @@
       .textOnVideo {
         position: absolute;
         bottom: 40%;
-        olor: white;
+        color: white;
         text-align: center;
         width: 50vw;
       }
@@ -136,6 +136,11 @@
   font-size: 20px;
   position: absolute;
   background-color: transparent;
+  z-index: 10;
+}
+
+.play-button i:hover {
+  cursor: pointer;
 }
 
 .section2 button i {
@@ -213,8 +218,14 @@
 .blogContainer {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  row-gap: 0;
   width: 100%;
   position: relative;
+}
+
+.blogContainer .grid-item {
+  height: 80%;
+
 }
 
 .grid-item {
@@ -241,6 +252,22 @@
   color: white;
   text-align: left;
 }
+
+/* ********************************* FOOTER ************************** */
+
+.footer { 
+  display: flex;
+  font-size: 1rem;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.footer p {
+  margin-top: 3vh;
+}
+
+
 
 
 
