@@ -11,15 +11,28 @@ const navLinks = document.querySelector('left-side');
 // burger.addEventListener('click', () => {
 //   navLinks.classList.toggle('active');})
 
-  // *****************************************
+  // ****************************************
 
   const playButton = document.querySelector(".play-button");
-  const video = document.getElementsByTagName("video");
+const video = document.getElementsByTagName("video")[1];
 
-  playButton.addEventListener("click", function () {
-    video[1].play();
-    
-  })
+playButton.addEventListener("click", function () {
+  if (video.paused) {
+    video.play();
+    playButton.style.display = "none";
+  } else {
+    video.pause();
+    playButton.style.display = "block";
+  }
+});
+
+
+
+// ** transformer le button play on pause inerhtml + add class hover  
+
+
+
+
   // *********************************
 
 //   // Get the button
