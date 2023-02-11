@@ -141,6 +141,8 @@
   position: absolute;
   background-color: transparent;
   z-index: 10;
+  cursor: pointer;
+  transition: visibility 1s;
 }
 
 .play-button i:hover {
