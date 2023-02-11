@@ -14,41 +14,27 @@ const navLinks = document.querySelector('left-side');
   // ****************************************
 
   const playButton = document.querySelector(".play-button");
-const video = document.getElementsByTagName("video")[1];
-
-playButton.addEventListener("click", function () {
-  if (video.paused) {
-    video.play();
-    playButton.style.display = "none";
-  } else {
-    video.pause();
-    playButton.style.display = "block";
-  }
-});
-
-
+  const video = document.querySelector("#video2");
+  
+  playButton.addEventListener("click", function() {
+    if (video.paused) {
+      video.play();
+      playButton.innerHTML = '<i class="fa-solid fa-pause"></i>';
+    } else {
+      video.pause();
+      playButton.innerHTML = '<i class="fa-solid fa-play"></i>';
+    }
+  });
+   
+  video.addEventListener("mouseover", function() { 
+    playButton.style.visibility = "visible";
+  });
+  
+  video.addEventListener("mouseout", function() {              
+    playButton.style.visibility = "hidden";
+  });
 
 // ** transformer le button play on pause inerhtml + add class hover  
+//  + 
+// ** Problème de flicker a corriger
 
-
-
-
-  // *********************************
-
-//   // Get the button
-//   const topBtn = $("#scrollTop"); // Target le bouton
-
-//   //Faire aparaitre le bouton apres 40px
-//   $(window).scroll(function() {
-//     if ($(this).scrollTop() > 20) {
-//       topBtn.show();
-//     } else {
-//       topBtn.hide();
-//     }
-//   });
-
-//     // utilise la methode animate de JS Jquery pour remonter la page
-//   topBtn.click(function() {
-//     $("html, body").animate({ scrollTop: 0 }, 2000);
-//   });
-// })
