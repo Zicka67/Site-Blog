@@ -58,7 +58,7 @@ nav {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  margin-bottom: 20px;
+  padding-bottom: 25px;
 }
 
 
@@ -180,6 +180,7 @@ nav a {
 
 .play-button {
   color: rgb(255, 255, 255);
+  font-size: 30px;
   position: absolute;
   background-color: transparent;
   top: 50%;
@@ -187,8 +188,7 @@ nav a {
   transform: translate(-50%, -50%);
   z-index: 10;
   cursor: pointer;
-  visibility: hidden;
-  transition: opacity 1s;
+  transition: visibility 1s;
 }
 
 fap-play {
@@ -197,9 +197,6 @@ fap-play {
 
 /* ******************************* BLOG ********************************** */
 
-.blog {
-  margin-bottom: 10vh;
-}
 
 .h1blog {
   display: flex;
@@ -228,7 +225,6 @@ fap-play {
   background-color: transparent;
   color: white;
   padding-left: 2vw;
-  margin-top: 0.5vh;
   text-transform: uppercase;
   font-size: 0.75rem;
   display: flex;
@@ -274,7 +270,7 @@ fap-play {
   gap: 1%;
   grid-template-columns: 1fr;
   width: 90%;
-  margin: 5vh auto;
+  margin: 5vh auto 0 auto;
 }
 
 .last {
@@ -331,7 +327,7 @@ fap-play {
 
 .footer {
   width: 100%;
-  margin: 35vh auto 0 auto;
+  margin: 30vh auto 0 auto;
   height: 6vh;
   background-color: rgb(57, 56, 55);
 }
@@ -340,13 +336,14 @@ fap-play {
   font-size: 0.75rem;
   display: flex;
   justify-content: center;
-  padding-top: 3%;
   color: white;
+  padding-top: 2vh;
 }
 
 .footer i {
   display: none;
 }
+
 
 
 
