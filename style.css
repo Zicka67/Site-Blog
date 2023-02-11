@@ -39,6 +39,10 @@ input:hover {
   cursor: pointer;
 }
 
+/* .play-button {
+  cursor: pointer;
+} */
+
 /* *********************** HEADER **************************** */
 
 header {
@@ -182,6 +186,9 @@ header {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 10;
+  cursor: pointer;
+  visibility: hidden;
+  transition: opacity 1s;
 }
 
 fap-play {
