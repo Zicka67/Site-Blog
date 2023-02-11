@@ -46,95 +46,95 @@ input:hover {
 /* *********************** HEADER **************************** */
 
 header {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-  }
-  
-  nav {
-    position: absolute;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    margin-bottom: 20px;
-  }
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
 
-  
-  .left-side, .right-side {
-    display: flex;
-    align-items: center;
-  }
+nav {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+}
 
-  .left-side {
-    margin-left: 1rem;
-    margin-top: 0.5rem;
-  }
 
-  .paddingRight {
-    margin-right: 1rem;
-  }
+.left-side, .right-side {
+  display: flex;
+  align-items: center;
+}
 
-  .right-side a {
-    text-transform: uppercase;
-  }
+.left-side {
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+}
 
-  .right-side a:hover {
-    cursor: pointer;
-  }
-  
-  .icon {
-    color: white;
-  }
-  
-  nav a {
-    margin-left: 0.5rem;
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    margin-top: 10px;
-    font-size: 10px;
-  }
-  
-  #background-video {
-    width: 100%;
-    height: auto;
-  }
+.paddingRight {
+  margin-right: 1rem;
+}
 
-  .textOnVideo {
-    position: absolute;
-    bottom: 25%;
-    color: white;
-    text-align: center;
-    width: 50vh;
-  }
+.right-side a {
+  text-transform: uppercase;
+}
 
-  .textOnVideo h1{
-    font-size: 1.5em;
-    margin-bottom: 2vh;
-    text-transform: uppercase;
-  }
+.right-side a:hover {
+  cursor: pointer;
+}
 
-  .textOnVideo h3{
-   font-size: 0.75em;
-   font-weight: 200;
-   margin-bottom: 2vh;
-  }
+.icon {
+  color: white;
+}
 
-  .textOnVideo input{
-    padding: 0.5em;
-    background-color: rgb(8, 168, 136);
-    border-radius: 5px;
-    color: white;
-  }
+nav a {
+  margin-left: 0.5rem;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  margin-top: 10px;
+  font-size: 10px;
+}
 
-  .textOnVideo input:hover {
-    cursor: pointer;
-  }
+#background-video {
+  width: 100%;
+  height: auto;
+}
 
-  /* ********************************************** SECTION2 ****************************************************** */
+.textOnVideo {
+  position: absolute;
+  bottom: 25%;
+  color: white;
+  text-align: center;
+  width: 50vh;
+}
 
- .section2 {
+.textOnVideo h1{
+  font-size: 1.5em;
+  margin-bottom: 2vh;
+  text-transform: uppercase;
+}
+
+.textOnVideo h3{
+  font-size: 0.75em;
+  font-weight: 200;
+  margin-bottom: 2vh;
+}
+
+.textOnVideo input{
+  padding: 0.5em;
+  background-color: rgb(8, 168, 136);
+  border-radius: 5px;
+  color: white;
+}
+
+.textOnVideo input:hover {
+  cursor: pointer;
+}
+
+/* ********************************************** SECTION2 ****************************************************** */
+
+.section2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -142,43 +142,43 @@ header {
   gap: 3vw;
   margin-top: 5vh;
   margin-bottom: 8vh;
- }
+}
 
- .section2left {
+.section2left {
   width: 90%;
   display: flex;
   align-items: center;
   position: relative;
- }
+}
 
- .section2right {
+.section2right {
   width: 90%;
   /* background-color: aqua; */
   color: rgb(0, 0, 0);
   display: flex;
   flex-direction: column;
- }
+}
 
- .section2right h1{
+.section2right h1{
   font-size: 1rem;
   padding-bottom: 1.7vh;
   text-align: left;
- }
+}
 
- .section2right p{
+.section2right p{
   font-size: 0.5rem;
   text-align: left;
- }
+}
 
- .section2 video {
+.section2 video {
   border-radius: 3px;
   width: 100%;
   height: 100%;
   /* position: relative; */
- }
+}
 
 
- .play-button {
+.play-button {
   color: rgb(255, 255, 255);
   position: absolute;
   background-color: transparent;
@@ -197,9 +197,9 @@ fap-play {
 
 /* ******************************* BLOG ********************************** */
 
-/* .blog {
-  height: 100vh;
-} */
+.blog {
+  margin-bottom: 10vh;
+}
 
 .h1blog {
   display: flex;
@@ -274,7 +274,7 @@ fap-play {
   gap: 1%;
   grid-template-columns: 1fr;
   width: 90%;
-  margin: 2vh auto;
+  margin: 5vh auto;
 }
 
 .last {
@@ -306,10 +306,12 @@ fap-play {
 
 .grid-item h3 {
   color: white;
+  padding-bottom: 2vh;
 }
 
 .grid-item p {
   color: white;
+  padding: 0.4vh 0;
 }
 
 
@@ -329,7 +331,7 @@ fap-play {
 
 .footer {
   width: 100%;
-  margin: 30vh auto 30vh auto;
+  margin: 35vh auto 0 auto;
   height: 6vh;
   background-color: rgb(57, 56, 55);
 }
