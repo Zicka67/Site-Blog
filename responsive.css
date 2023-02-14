@@ -82,28 +82,42 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 90%;
-    margin: 2vh auto 0 auto;
+    position: relative;
+    width: auto;
+    height:370px;
   }
-  
-  
+
   .grid-item {
     background-color: rgba(255, 255, 255, 0.8);
     text-align: center;
     margin: 10px auto;
     width: 100%;
     position: relative;
-    filter: grayscale(100%);
     transition: 0.5s;
   }
-  
-  .grid-item:hover {
+   
+  .grid-item img:hover {
     filter: grayscale(0%);
     transition: 0.5s;
   }
+
+  .blogContainer .grid-item img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    filter: grayscale(100%);
+    transition: 0.5s;
+  }
+
+  .blogContainer .grid-item img:hover {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    filter: grayscale(0%);
+    transform: 0.5s;
+  }
   
   .grid-item img {
-    /* position: relative; */
     width: 40%;
     height: 100%;
     border-radius: 5px;
@@ -125,8 +139,6 @@
   }
 
 }
-
-
 
 @media only screen and (min-width: 1500px) {
 
@@ -166,7 +178,6 @@
   .right-side { 
     margin-top: 1vw;
   }
-  
   
   .paddingRight {
     margin-right: 5rem;
@@ -268,7 +279,6 @@
     border-radius: 5px;
     width: 100%;
     height: 100%;
-    /* position: relative; */
   }
   
   .play-button {
@@ -356,19 +366,10 @@
     justify-content: center;
   }
   
-  .blogContainer {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    position: relative;
-    width: auto;
-    height:370px;
-
-  }
-  
   .blogContainer .grid-item {
     width: 18vw;
     height: 42vh;
+    margin-bottom: 15px;
   }
   
   .grid-item {
@@ -397,16 +398,7 @@
     text-align: left;
   }
 
-  .blogContainer .grid-item {
-    margin-top: 10px;
-  }
-  
   /* ********************************* FOOTER ************************** */
-
-  /* #flex {
-    display: flex;
-    flex-direction: column;
-  } */
   
   .footer { 
     display: flex;
@@ -432,7 +424,6 @@
   .footer button {
     padding: 1em;
     border-radius: 100%;
-    /* background-color: rgb(57, 56, 55); */
     background-color: transparent;
     border: black 1px solid;
     right: 5vw;
