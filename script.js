@@ -17,6 +17,9 @@ document.addEventListener("DOMContentLoaded", function () {
 //   dropdownMenu.classList.toggle('show-dropdown');
 // });
 
+
+
+
 // ******************** PLAYBUTTON + PAUSE ********************
 
 const playButton = document.querySelector(".play-button");
@@ -32,6 +35,7 @@ playButton.addEventListener("click", function() {
   }
 });
 
+// *********
 video.addEventListener("mouseover", function() { 
   playButton.style.visibility = "visible";
 });
