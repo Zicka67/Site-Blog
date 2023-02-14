@@ -18,24 +18,30 @@
   
   <header id="header">
     <nav>
-      <div class="left-side">
+      <!-- <div class="left-side">
         <p class="icon">Blog</p>
-      </div>
-      <div class="right-side">
-        <a href="#header">Home</a>
-        <a href="#section2">Lifestyle</a>
-        <a href="#blog">Food</a>
-        <a href="#footer">Nature</a>
-        <a href="#" class="paddingRight">Photography</a>
-      </div>
+      </div> -->
+      <nav id='menu'>
+        <div class="left-side">
+          <p class="icon">Blog</p>
+        </div>
+        <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+        <ul>
+          <li><a href='http://'>Home</a></li>
+          <li><a href='http://'>Lifestyle</a></li>
+          <li><a href='http://'>Food</a></li>
+          <li><a href='http://'>Nature</a></li>
+          <li><a href='http://'>Photography</a></li>
+        </ul>
+      </nav>
     </nav>
     <video id="background-video" autoplay loop muted playsinline>          
       <source src="video\Pexels Videos 2169880.mp4" type="video/mp4">
     </video>
     <div class="textOnVideo">
       <h1>My blog template</h1>
-      <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea veritatis atque ab temporibus perspiciatis numquam dignissimos repellat voluptatum minus.</h3>
-      <a href=""><input type="button" value="Go to blog"></input></a>
+      <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea veritatis atque ab temporibus perspiciatis numquam dignissimos repellat voluptatum minus. Ea veritatis atque ab temporibus perspiciatis numquam dignissimos. Temporibus perspiciatis numquam dignissimos repellat voluptatum minus.</h3>
+      <a href=""><input  type="button" value="Go to blog"></input></a>
     </div>
     
     <input type="text">
@@ -50,7 +56,7 @@
     </div>
     
     <div class="section2right">
-      <h1>Main article</h1>
+      <h1 id="buttonScroll">Main article</h1>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ea harum sunt. Met consectetur adipisicing elit. Incidunt quae officiis adipisc Ea veritatis atque ab temporibus. Unde ea harum sunt elit. Unde ea harum sunt. Ea veritatis atque ab temporibus  <br> <br> Lorem ipsum dolor, sit amet consectetur adipisicing elit.
         Deleniti in, ad vero dignissimos nisi vel ullam a! <br> <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt quae officiis adipisci illo sint dolorem repellendus magnam aperiam quo.</p>
         
@@ -162,7 +168,7 @@
       
       //Faire aparaitre le bouton apres 40px
       $(window).scroll(function() {
-        if ($(this).scrollTop() > 20) {
+        if ($(this).scrollTop() > 40) {
           topBtn.show();
         } else {
           topBtn.hide();
@@ -186,6 +192,16 @@
           nav.classList.remove("sticky");
         }
       };
+
+      // **************function updatemenu() {
+  if (document.getElementById('responsive-menu').checked == true) {
+    document.getElementById('menu').style.borderBottomRightRadius = '0';
+    document.getElementById('menu').style.borderBottomLeftRadius = '0';
+  }else{
+    document.getElementById('menu').style.borderRadius = '5px';
+  }
+
+
     </script>
   </body>
   </html>
