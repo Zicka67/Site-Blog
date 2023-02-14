@@ -1,7 +1,5 @@
 @media only screen and (min-width: 1300px) {
-  .textOnVideo {
-    margin-bottom: 20vh;
-  }
+
   .textOnVideo h3{
     font-size: 1.2em;
     font-weight: 200;
@@ -18,7 +16,22 @@
   }
 }
 
+@media only screen and (min-width: 800px) {
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(57, 56, 55);
+  z-index: 99;
+  height: 35px;
+}
+}
 @media only screen and (min-width: 700px) {
+  .section2right p {
+    font-size: 1em;
+  }
+
   .textOnVideo {
     position: absolute;
     color: white;
@@ -56,6 +69,59 @@
 
   .categorie input {
     padding-left: 1vh;
+  }
+
+  .right-side ul li a{ 
+    margin-top: 1vw;
+    margin-right: 5vw;
+  }
+
+  /* ********* */
+
+  .blogContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 2vh auto 0 auto;
+  }
+  
+  
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    margin: 10px auto;
+    width: 100%;
+    position: relative;
+    filter: grayscale(100%);
+    transition: 0.5s;
+  }
+  
+  .grid-item:hover {
+    filter: grayscale(0%);
+    transition: 0.5s;
+  }
+  
+  .grid-item img {
+    /* position: relative; */
+    width: 40%;
+    height: 100%;
+    border-radius: 5px;
+  }
+  
+  .grid-item h3 {
+    color: white;
+    padding-bottom: 2vh;
+  }
+  
+  .grid-item p {
+    color: white;
+    padding: 0.4vh 0;
+  }
+
+  #menu ul {
+    width: 100%;
+    margin-right: 5vw;
   }
 
 }
@@ -99,7 +165,6 @@
   
   .right-side { 
     margin-top: 1vw;
-    padding-right: 5vw;
   }
   
   
@@ -140,6 +205,7 @@
     color: white;
     text-align: center;
     width: 50vw;
+    top: 300px;
   }
   
   .textOnVideo h1{
@@ -171,13 +237,12 @@
   .section2 {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    gap: 3vw;
-    margin-bottom: 15vh;
+    align-items: start;
+    gap: 7%;
   }
   
   .section2left {
-    width: 55%;
+    width: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -185,8 +250,7 @@
   }
   
   .section2right {
-    width: 35%;
-    height: 58vh;
+    width: 26%;
     color: rgb(0, 0, 0);
   }
   
@@ -197,6 +261,7 @@
   
   .section2right p{
     font-size: 1.45rem;
+    text-align: justify;
   }
   
   .section2 video {
@@ -296,24 +361,26 @@
     flex-direction: row;
     flex-wrap: wrap;
     position: relative;
-    width: 100%;
-    height: 1200px;
+    width: auto;
+    height:370px;
+
   }
   
   .blogContainer .grid-item {
-    width: 20vw;
-    height: 45vh;
+    width: 18vw;
+    height: 42vh;
   }
   
   .grid-item {
     background-color: rgba(255, 255, 255, 0.8);
     text-align: center;
     transition: 0.5s;
-    margin: 0 3vw 0 0;
+    margin: 0 4.5vw 0 0;
   }
   
   .grid-item img {
     width: 100%;
+    height: 100%;
     border-radius: 5px;
     transition: 0.5s;
   }
@@ -329,8 +396,17 @@
     color: white;
     text-align: left;
   }
+
+  .blogContainer .grid-item {
+    margin-top: 10px;
+  }
   
   /* ********************************* FOOTER ************************** */
+
+  /* #flex {
+    display: flex;
+    flex-direction: column;
+  } */
   
   .footer { 
     display: flex;
@@ -338,13 +414,14 @@
     align-items: center;
     text-align: center;
     justify-content: center;
-    height: 15vh;
-    margin: 10vh auto 0 auto;
+    height: 10vh;
+    margin: 50vh auto 0 auto;
   }
   
   .footer p {
     font-size: 1.25rem;
     display: flex;
+    margin-top: -20px;
   }
   
   .footer i {
@@ -353,7 +430,7 @@
   }
   
   .footer button {
-    padding: 0.75em;
+    padding: 1em;
     border-radius: 100%;
     /* background-color: rgb(57, 56, 55); */
     background-color: transparent;
