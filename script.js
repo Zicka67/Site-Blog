@@ -46,7 +46,7 @@ video.addEventListener("mouseout", function() {
 
 // ********************************* blog *******************
 
-function filterGridItems(category) {
+function filterGridItems(category) {    //DOMContentLoaded pour afficher au chargement de page ?
   // Sélectionne tous les éléments de la grille
   const gridItems = document.querySelectorAll('.grid-item');
 
@@ -66,7 +66,7 @@ function filterGridItems(category) {
   });
 
   // Met à jour le nombre d'éléments affichés dans le bouton
-  const button = document.querySelector(`a[href="#blog"][onclick="filterGridItems('${category}')"]`);
+  const button = document.querySelector(`a[href="#blog"][onclick="filterGridItems('${category}')"]`);  //Les backticks ` permettent d'utiliser des templates de chaînes de caractères (template literals) en JavaScript. Cela permet d'interpoler des expressions en utilisant ${expression} dans la chaîne de caractères.
   button.querySelector('input').value = `${category} (${count})`;
 }
 
