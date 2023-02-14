@@ -93,7 +93,6 @@ nav a {
   margin-left: 0.5rem;
   text-decoration: none;
   color: rgb(255, 255, 255);
-  margin-top: 10px;
   font-size: 10px;
 }
 
@@ -169,6 +168,7 @@ nav a {
 .section2right p{
   font-size: 0.5rem;
   text-align: left;
+  margin-bottom: -30px;
 }
 
 .section2 video {
@@ -236,31 +236,35 @@ fap-play {
 .categorie a:nth-child(1) {
   background-color: black;
   height: 1.35rem;
-  margin-bottom: 1.5vh;
+  margin-bottom: 1vh;
 }
 .categorie a:nth-child(2) {
   background-color: rgb(191, 20, 74);
   height: 1.35rem;
-  margin-bottom: 1.5vh;
+  margin-bottom: 1vh;
 }
 .categorie a:nth-child(3) {
   background-color: rgb(8, 94, 180);
   height: 1.35rem;
-  margin-bottom: 1.5vh;
+  margin-bottom: 1vh;
 }
 .categorie a:nth-child(4) {
   background-color: rgb(23, 151, 23);
   height: 1.35rem;
-  margin-bottom: 1.5vh;
+  margin-bottom: 1vh;
 }
 .categorie a:nth-child(5) {
   background-color: rgb(58, 58, 58);
   height: 1.35rem;
-  margin-bottom: 1.5vh;
+  margin-bottom: 1vh;
 }
 
 .categorie input:hover {
   cursor: pointer;
+}
+
+.categorie a input{
+  margin-top: 2px;
 }
 
 /* --- Photos Blog */
@@ -345,7 +349,7 @@ fap-play {
 	color: #ffffff;
 	height: 3vh;
 	padding-left: 18px;
-  font-size: 1.25rem;
+  font-size: 1rem;
   border-radius: 0% !important;
 }
 #menu ul, #menu li {
@@ -412,7 +416,7 @@ fap-play {
 }
 #menu ul.sub-menus a {
 	color: #FFFFFF;
-	font-size: 16px;
+	font-size: 12px;
 	text-transform: uppercase;
 }
 #menu li:hover ul.sub-menus {
