@@ -68,16 +68,16 @@
         <h1>Blog</h1>
       </div>
       <div class="categorie">
-        <a href=""><input type="button" value="All ()"></input></a>
-        <a href=""><input type="button" value="lifestyle ()"></input></a>
-        <a href=""><input type="button" value="food ()"></input></a>
-        <a href=""><input type="button" value="nature ()"></input></a>
-        <a href=""><input type="button" value="photography ()"></input></a>
+        <a href="#blog" onclick="filterGridItems('all')"><input type="button" value="all ()"></input></a>
+        <a href="#blog" onclick="filterGridItems('lifestyle')"><input type="button" value="lifestyle ()"></input></a>
+        <a href="#blog" onclick="filterGridItems('food')"><input type="button" value="food ()"></input></a>
+        <a href="#blog" onclick="filterGridItems('nature')"><input type="button" value="nature ()"></input></a>
+        <a href="#blog" onclick="filterGridItems('photography')"><input type="button" value="photography ()"></input></a>
       </div>
       
       <div class="blogContainer">
         
-        <div class="grid-item">
+        <div class="grid-item" data-category="photography">
           <img src="img\MicrosoftTeams-image (9).png" alt="Image 1">
           <div class="textOnImg">
             <h3>China Trip</h3>
@@ -86,7 +86,7 @@
             <p><i class="fa-sharp fa-regular fa-heart"></i> 123</p>
           </div>
         </div>
-        <div class="grid-item">
+        <div class="grid-item" data-category="food">
           <img src="img\MicrosoftTeams-image (6).png" alt="Image 1">
           <div class="textOnImg">
             <h3>China Trip</h3>
@@ -95,7 +95,7 @@
             <p><i class="fa-sharp fa-regular fa-heart"></i> 123</p>
           </div>
         </div>
-        <div class="grid-item">
+        <div class="grid-item" data-category="nature">
           <img src="img\MicrosoftTeams-image (7).png" alt="Image 1">
           <div class="textOnImg">
             <h3>China Trip</h3>
@@ -104,7 +104,7 @@
             <p><i class="fa-sharp fa-regular fa-heart"></i> 123</p>
           </div>
         </div>
-        <div class="grid-item">
+        <div class="grid-item" data-category="lifestyle">
           <img src="img\MicrosoftTeams-image (4).png" alt="Image 1">
           <div class="textOnImg">
             <h3>China Trip</h3>
@@ -113,7 +113,7 @@
             <p><i class="fa-sharp fa-regular fa-heart"></i> 123</p>
           </div>
         </div>
-        <div class="grid-item">
+        <div class="grid-item" data-category="nature">
           <img src="img\MicrosoftTeams-image (8).png" alt="Image 1">
           <div class="textOnImg">
             <h3>China Trip</h3>
@@ -122,7 +122,7 @@
             <p><i class="fa-sharp fa-regular fa-heart"></i> 123</p>
           </div>
         </div>
-        <div class="grid-item">
+        <div class="grid-item" data-category="food">
           <img src="img\MicrosoftTeams-image (1).png" alt="Image 1">
           <div class="textOnImg">
             <h3>China Trip</h3>
@@ -131,7 +131,7 @@
             <p><i class="fa-sharp fa-regular fa-heart"></i> 123</p>
           </div>
         </div>
-        <div class="grid-item">
+        <div class="grid-item" data-category="photography">
           <img src="img\MicrosoftTeams-image (3).png" alt="Image 1">
           <div class="textOnImg">
             <h3>China Trip</h3>
@@ -140,7 +140,7 @@
             <p><i class="fa-sharp fa-regular fa-heart"></i> 123</p>
           </div>
         </div>
-        <div class="grid-item last">
+        <div class="grid-item last" data-category="nature">
           <img src="img\MicrosoftTeams-image (2).png" alt="Image 1">
           <div class="textOnImg">
             <h3>China Trip</h3>
@@ -198,7 +198,7 @@
     document.getElementById('menu').style.borderBottomRightRadius = '0';
     document.getElementById('menu').style.borderBottomLeftRadius = '0';
   }else{
-    document.getElementById('menu').style.borderRadius = '5px';
+    document.getElementById('menu').style.borderRadius = '0px';
   }
 
 
