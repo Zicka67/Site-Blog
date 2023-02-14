@@ -1,24 +1,22 @@
-// ************ AUTO PLAY SUR L'ELEMENT background-video
+// ************ AUTO PLAY SUR L'ELEMENT background-video *****************
 
 document.addEventListener("DOMContentLoaded", function () {
   var video = document.getElementById("background-video");
   video.play();
 });
 
-// ********************* MENU STICKY ***********************
+// ********** NAV STICKY ***********
 
+// window.onscroll = function() {
+//   const header = document.querySelector("header");
+//   const nav = document.querySelector("nav");
 
-// ********************* MENU BURGER ***********************
-
-// const burgerMenu = document.querySelector('.burger-menu');
-// const dropdownMenu = document.querySelector('.dropdown-menu');
-
-// burgerMenu.addEventListener('click', () => {
-//   dropdownMenu.classList.toggle('show-dropdown');
-// });
-
-
-
+//   if (window.pageYOffset >= header.offsetHeight) {
+//     nav.classList.add("sticky");
+//   } else {
+//     nav.classList.remove("sticky");
+//   }
+// };
 
 // ******************** PLAYBUTTON + PAUSE ********************
 
@@ -49,9 +47,9 @@ video.addEventListener("mouseout", function() {
 function filterGridItems(category) {    //DOMContentLoaded pour afficher au chargement de page ?
   // Sélectionne tous les éléments de la grille
   const gridItems = document.querySelectorAll('.grid-item');
-
+  
   let count = 0; // Initialise le compteur à 0
-
+  
   // Parcours chaque élément de la grille
   gridItems.forEach(item => {
     // Si l'élément a la catégorie correspondante
@@ -64,7 +62,7 @@ function filterGridItems(category) {    //DOMContentLoaded pour afficher au char
       item.style.display = 'none';
     }
   });
-
+  
   // Met à jour le nombre d'éléments affichés dans le bouton
   const button = document.querySelector(`a[href="#blog"][onclick="filterGridItems('${category}')"]`);  //Les backticks ` permettent d'utiliser des templates de chaînes de caractères (template literals) en JavaScript. Cela permet d'interpoler des expressions en utilisant ${expression} dans la chaîne de caractères.
   button.querySelector('input').value = `${category} (${count})`;
